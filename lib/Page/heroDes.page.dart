@@ -157,12 +157,13 @@ class _DashboardState extends State<HeroDesPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    "Kaiku details!",
-                    style: TextStyle(
-                      fontSize: 32,
-                    ),
-                  ),
+                  RichText(
+                      text: const TextSpan(
+                          text: "Kaiku ",
+                          style: TextStyle(
+                            fontSize: 32,
+                          ),
+                          children: [TextSpan(text: "details!")])),
                   const SizedBox(
                     height: 30,
                   ),
@@ -191,10 +192,17 @@ class _DashboardState extends State<HeroDesPage> {
                             fontWeight: FontWeight.bold),
                       ),
                       Container(
+                          height: 30,
+                          width: 80,
                           padding: const EdgeInsets.all(4),
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.grey)),
-                          child: const Text("kaiku")),
+                          child: const TextField(
+                            decoration: InputDecoration(
+                              enabledBorder: OutlineInputBorder(
+                                borderSide:
+                                    BorderSide(width: 2, color: Colors.blue),
+                              ),
+                            ),
+                          )),
                     ],
                   ),
                   const SizedBox(
