@@ -91,7 +91,7 @@ class _DashboardState extends State<HeroListPage> {
               ),
               const SizedBox(height: 30),
               SizedBox(
-                width: MediaQuery.of(context).size.width / 8,
+                width: MediaQuery.of(context).size.width / 4,
                 child: ListView.builder(
                   shrinkWrap: true,
                   itemCount: 9,
