@@ -16,3 +16,4 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
  flutter version: 3.3.5
+  tested on android mobile device (mi max android ver7)

@@ -40,7 +40,7 @@ class AppRouter extends _i5.RootStackRouter {
     HeroDesRoute.name: (routeData) {
       return _i5.MaterialPageX<dynamic>(
         routeData: routeData,
-        child: const _i3.HeroDesPage(),
+        child: _i3.HeroDesPage(),
       );
     },
     HeroListRoute.name: (routeData) {
