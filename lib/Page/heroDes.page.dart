@@ -101,12 +101,33 @@ class _DashboardState extends State<HeroDesPage> {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  RichText(
-                      text: TextSpan(
-                          text: widget.name,
-                          style: const TextStyle(
-                              fontSize: 32, color: Colors.black),
-                          children: const [TextSpan(text: "details!")])),
+                  Row(
+                    children: [
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width / 3,
+                        child: TextField(
+                            maxLength: null,
+                            maxLines: null,
+                            style: const TextStyle(
+                                fontSize: 32, fontWeight: FontWeight.bold),
+                            controller: namecontroller,
+                            decoration: InputDecoration(
+                              hintText: widget.name,
+                            )),
+                      ),
+                      const Text(
+                        "details!",
+                        style: TextStyle(
+                            fontSize: 32, fontWeight: FontWeight.bold),
+                      )
+                    ],
+                  ),
+                  // RichText(
+                  //     text: TextSpan(
+                  //         text: widget.name,
+                  //         style: const TextStyle(
+                  //             fontSize: 32, color: Colors.black),
+                  //         children: const [TextSpan(text: "details!")])),
                   const SizedBox(
                     height: 30,
                   ),
